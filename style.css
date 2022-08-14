@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #F3F1FF;
+}
+section{
+    margin-top: 1rem !important;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+}
+.container{
+    background-color: #ffffff;
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+ .title-text{
+    color: #562EFF;
+    font-size: 24px;
+}
+
+.top-players .players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    
+}
+.top-players .players{
+
+    padding: 2rem 0;
+    padding-top: 3rem;
+    border-bottom: 0.5px solid rgb(177, 172, 172);
+}
+
+.top-players .players .player img{
+    width: 56px;
+    height: 56px;
+
+}
+.top-players .players .player{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    
+
+}
+.top-players .players .player h3{
+    margin-left: 1rem;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-blog{
+    padding-top: 2rem;
+}
+.top-blog .blog-warper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    padding-top: 2rem;
+}
+.top-blog .blog-warper .blogs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.top-blog .blog-warper .blogs .blog-img img{
+    width: 177px;
+    height: 117px;
+}
+.top-blog .blog-warper .blogs .blog-content{
+    margin-left: 1rem;
+
+}
+.top-blog .blog-warper .blogs .blog-content h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 33px;
+}
+.top-blog .blog-warper .blogs .blog-content span{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.top-blog .blog-warper .blogs .blog-content span a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-warper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    padding-top: 2rem;
+}
+.card-warper .cards{
+    border-radius: 10px;
+    box-shadow:0px 5px 15px 0px #dfdfdf;
+    padding: 1rem;
+}
+.card-warper .cards .card-content .review-content img{
+    width: 15px;
+}
+.card-warper .cards .card-content .review-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.card-warper .cards .card-content h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 33px;
+    margin-top: 1rem;
+}
+.card-warper .cards .card-content a{
+    text-decoration: none;
+    font-size: 14px;
+    color: tomato;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.card-warper .cards .card-content .review-content>span{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 0 1rem;
+}
+.card-warper .cards .card-content .review-content .clock-div{
+    display: flex;
+    align-items: center;
+    background-color: rgba(238, 118, 96, 0.352);
+    padding: 0.3rem 0.4rem;
+    border-radius: 50px;
+}
+.card-warper .cards .card-content .review-content .clock-div span{
+    margin-left: 5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: tomato;
+    font-weight: 600;
+}
+header{
+    background-color: #562EFF;
+}
+header .header{
+    background-color: #562EFF;
+    padding: 1rem 2rem;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav .navmenu ul{
+    display: flex;
+    align-items: center;
+}
+.header nav .navmenu ul li{
+    list-style: none;
+    margin-left: 1.5rem;
+}
+.header nav .navmenu ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.header nav .navmenu ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.brand-name img{
+    width: 50px;
+}
+
+
+/* responsive styel */
+@media only screen and (max-width:688px) {
+    .top-players .players{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .top-blog .blog-warper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-warper{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+@media only screen and (max-width:448px) {
+    .top-players .players{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+
